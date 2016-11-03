@@ -1,0 +1,3507 @@
+============================= test session starts ==============================
+platform darwin -- Python 2.7.11, pytest-2.9.2, py-1.4.31, pluggy-0.3.1 -- /Users/GotIt/env/bin/python2.7
+cachedir: tests/.cache
+rootdir: /Users/GotIt/wao/api-server/tests, inifile: 
+collecting ... collected 167 items
+
+tests/asker_explaination_message_test.py::TestAskerMessage::test_post_message_explanation_not_exist PASSED
+tests/asker_explaination_message_test.py::TestAskerMessage::test_post_message_explanation_id_missing PASSED
+tests/asker_explaination_message_test.py::TestAskerMessage::test_post_message_text_success FAILED
+tests/asker_explaination_message_test.py::TestAskerMessage::test_post_message_file_excel_success FAILED
+tests/asker_explaination_message_test.py::TestAskerMessage::test_post_message_image_sucess FAILED
+tests/asker_explaination_message_test.py::TestAskerMessage::test_post_message_with_both_attach_and_message_success FAILED
+tests/asker_test.py::TestAsker::test_add_info_missing_nickname PASSED
+tests/asker_test.py::TestAsker::test_add_info_missing_grade PASSED
+tests/asker_test.py::TestAsker::test_add_info_missing_phone PASSED
+tests/asker_test.py::TestAsker::test_add_info_nickname_existed PASSED
+tests/asker_test.py::TestAsker::test_add_info_grade_id_not_valid PASSED
+tests/asker_test.py::TestAsker::test_add_info_phone_not_valid PASSED
+tests/asker_test.py::TestAsker::test_add_info_grade_id_was_set FAILED
+tests/asker_test.py::TestAsker::test_add_info_nick_name_was_set PASSED
+tests/asker_test.py::TestAsker::test_add_info_phone_already_in_account PASSED
+tests/asker_test.py::TestAsker::test_add_info_phone_already_existed_in_another_account PASSED
+tests/asker_test.py::TestAsker::test_add_info_success PASSED
+tests/asker_test.py::TestAsker::test_edit_phone_missing_phone PASSED
+tests/asker_test.py::TestAsker::test_edit_phone_taken_by_another PASSED
+tests/asker_test.py::TestAsker::test_edit_phone_invalid_phone_numer PASSED
+tests/asker_test.py::TestAsker::test_edit_phone_success PASSED
+tests/asker_test.py::TestAsker::test_get_my_question_without_page PASSED
+tests/asker_test.py::TestAsker::test_get_my_question_invalid_page PASSED
+tests/asker_test.py::TestAsker::test_get_live_feed_without_page PASSED
+tests/asker_test.py::TestAsker::test_get_live_feed_invalid_page PASSED
+tests/asker_test.py::TestAsker::test_create_problem_missing_software PASSED
+tests/asker_test.py::TestAsker::test_create_problem_missing_text PASSED
+tests/asker_test.py::TestAsker::test_create_problem_missing_topic_id PASSED
+tests/asker_test.py::TestAsker::test_create_problem_invalid_share_url PASSED
+tests/asker_test.py::TestAsker::test_create_problem_invalid_file_url PASSED
+tests/asker_test.py::TestAsker::test_create_problem_invalid_shared_spreadsheet_thumbnail PASSED
+tests/asker_test.py::TestAsker::test_create_problem_invalid_file_url_thumbnail PASSED
+tests/asker_test.py::TestAsker::test_create_problem_invalid_software PASSED
+tests/asker_test.py::TestAsker::test_create_problem_topic_not_exist PASSED
+tests/asker_test.py::TestAsker::test_create_problem_spreadsheet_shared_url_missing_fields FAILED
+tests/asker_test.py::TestAsker::test_create_problem_file_upload_missing_fields FAILED
+tests/asker_test.py::TestAsker::test_create_problem_with_out_attachment PASSED
+tests/asker_test.py::TestAsker::test_create_problem_with_shared_spreadsheet PASSED
+tests/asker_test.py::TestAsker::test_create_problem_with_excel_attach PASSED
+tests/asker_test.py::TestAsker::test_create_problem_with_image_attach PASSED
+tests/asker_test.py::TestAsker::test_update_info_grade_was_null PASSED
+tests/asker_test.py::TestAsker::test_update_info_grade_missing PASSED
+tests/asker_test.py::TestAsker::test_update_info_success FAILED
+tests/asker_test.py::TestAsker::test_change_password_not_correct PASSED
+tests/asker_test.py::TestAsker::test_change_password_success PASSED
+tests/auth_test.py::TestAuthentication::test_sign_up_with_invalid_email PASSED
+tests/auth_test.py::TestAuthentication::test_signup_with_missing_email PASSED
+tests/auth_test.py::TestAuthentication::test_signup_with_missing_password PASSED
+tests/auth_test.py::TestAuthentication::test_sign_up_with_existed_email PASSED
+tests/auth_test.py::TestAuthentication::test_sign_up_with_valid_data PASSED
+tests/auth_test.py::TestAuthentication::test_sign_in_with_invalid_data PASSED
+tests/auth_test.py::TestAuthentication::test_sign_in_with_valid_data PASSED
+tests/auth_test.py::TestAuthentication::test_sign_in_with_password_without_salt PASSED
+tests/auth_test.py::TestAuthentication::test_sign_in_but_account_not_active PASSED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_validate_input FAILED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_set_first_name FAILED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_set_last_name FAILED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_set_skype FAILED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_set_google_plus FAILED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_set_avatar FAILED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_set_adv_channel FAILED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_set_payment FAILED
+tests/explainer_profile_settings_test.py::TestExplainerProfileSettings::test_set_multi_properties FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_message_get_method_exception PASSED
+tests/explanation_session_test.py::TestExplanationSession::test_send_message_input_validation PASSED
+tests/explanation_session_test.py::TestExplanationSession::test_send_message_to_non_existed_explanation FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_to_complete_problem FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_to_ratting_problem FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_to_failed_problem FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_to_flagged_problem FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_to_expired_session FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_in_concept_section FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_in_step_by_step FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_in_final_solution FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_chat_message_in_discussion_section FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_concept_when_session_expired FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_concept_twice_exception FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_step_when_session_expired FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_step_before_send_concept FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_multi_steps FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_end_step_by_step_with_no_step FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_step_after_end_step_by_step FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_end_step_by_step_twice FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_end_step_by_step_when_session_expired FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_final_solution_before_send_concept FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_final_solution_before_send_step FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_final_solution_before_end_step_by_step FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_final_solution_when_session_expired FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_send_final_solution_twice FAILED
+tests/explanation_session_test.py::TestExplanationSession::test_text_filter_apply_to_message FAILED
+tests/ranking_test.py::TestRanking::test_ranking_by_rating FAILED
+tests/ranking_test.py::TestRanking::test_ranking_by_bid FAILED
+tests/ranking_test.py::TestRanking::test_ranking_by_answer FAILED
+tests/ranking_test.py::TestRanking::test_ranking_by_audit FAILED
+tests/rating_test.py::TestRating::test_explainer_rating_without_reason_success FAILED
+tests/rating_test.py::TestRating::test_explainer_rating_with_reason_success FAILED
+tests/router_test.py::TestProblemCreated::test_successfully_routing_question FAILED
+tests/router_test.py::TestProblemCreated::test_rerouting_problem_raises_exception FAILED
+tests/router_test.py::TestProblemCreated::test_routing_to_multiple_explainers FAILED
+tests/router_test.py::TestProblemCreated::test_max_route_count_is_not_exceeded FAILED
+tests/router_test.py::TestProblemCreated::test_routing_with_no_explainers FAILED
+tests/router_test.py::TestProblemCreated::test_creating_problem_results_in_handle_problem_created FAILED
+tests/router_test.py::TestProblemCreated::test_routing_does_not_route_to_bidding_explainers FAILED
+tests/router_test.py::TestProblemCreated::test_routing_does_not_route_to_disconnected_explainers FAILED
+tests/router_test.py::TestExplainerAvailable::test_connected_explainer_is_not_routed_problem_without_delay FAILED
+tests/router_test.py::TestExplainerAvailable::test_connected_explainer_is_routed_problem FAILED
+tests/router_test.py::TestExplainerAvailable::test_connected_explainer_is_not_routed_problem_twice FAILED
+tests/router_test.py::TestExplainerAvailable::test_connected_explainer_is_available_if_no_problems FAILED
+tests/router_test.py::TestExplainerAvailable::test_explainer_not_routed_to_problem_with_wrong_subject FAILED
+tests/router_test.py::TestExplainerAvailable::test_explainer_not_routed_problem_if_not_available FAILED
+tests/router_test.py::TestExplainerAvailable::test_explainer_routed_to_high_priority_problem FAILED
+tests/router_test.py::TestBidAndSkipAndFlag::test_only_bid_becomes_king FAILED
+tests/router_test.py::TestBidAndSkipAndFlag::test_cannot_bid_on_problem_not_routed FAILED
+tests/router_test.py::TestBidAndSkipAndFlag::test_bid_loses_if_better_bid_comes_in FAILED
+tests/router_test.py::TestBidAndSkipAndFlag::test_explainer_stays_in_bidding_state_when_others_bid FAILED
+tests/router_test.py::TestBidAndSkipAndFlag::test_skip FAILED
+tests/router_test.py::TestBidAndSkipAndFlag::test_skip_and_bid_reduce_num_bidding FAILED
+tests/router_test.py::TestBidAndSkipAndFlag::test_flag FAILED
+tests/router_test.py::TestBidAndSkipAndFlag::test_flag_and_bid FAILED
+tests/router_test.py::TestGrantOrTimeout::test_no_bids_results_in_failed FAILED
+tests/router_test.py::TestGrantOrTimeout::test_having_bids_results_in_chatting FAILED
+tests/router_test.py::TestGrantOrTimeout::test_cannot_bid_on_completed_problem FAILED
+tests/router_test.py::TestGrantOrTimeout::test_timed_out_bids_decrease_num_bidding FAILED
+tests/router_test.py::TestGrantOrTimeout::test_max_routes_or_timeout_not_called_if_still_bidding_and_not_timeout FAILED
+tests/router_test.py::TestGrantOrTimeout::test_max_routes_or_timeout_called_if_none_bidding_and_max_routes FAILED
+tests/router_test.py::TestGrantOrTimeout::test_max_routes_or_timeout_not_called_if_not_max_routes FAILED
+tests/router_test.py::TestProblemReroute::test_problem_is_rerouted_if_no_king FAILED
+tests/router_test.py::TestProblemReroute::test_problem_is_not_rerouted_if_success FAILED
+tests/router_test.py::TestProblemReroute::test_problem_is_rerouted_if_no_bids FAILED
+tests/router_test.py::TestProblemReroute::test_reroute_problem FAILED
+tests/router_test.py::TestProblemReroute::test_rerouted_problem_routed_only_to_new_explainers FAILED
+tests/router_test.py::TestProblemReroute::test_rerouted_problem_can_be_granted FAILED
+tests/router_test.py::TestChattingEnded::test_states_after_chatting_ended FAILED
+tests/router_test.py::TestChattingEnded::test_explainer_can_be_routed_after_chatting_ended FAILED
+tests/router_test.py::TestProblemRating::test_rating_problem_completes_problem FAILED
+tests/router_test.py::TestProblemRating::test_rating_problem_does_not_clobber_explainer_state FAILED
+tests/router_test.py::TestBucketing::test_explainer_not_routed_problem_if_subject_doesnt_match FAILED
+tests/router_test.py::TestBucketing::test_explainer_routed_problem_if_one_subject_matches FAILED
+tests/router_test.py::TestBucketing::test_bucketing FAILED
+tests/router_test.py::TestBiddingScore::test_bidding_score_with_zero_wr FAILED
+tests/router_test.py::TestBiddingScore::test_bidding_score_with_zero_wb FAILED
+tests/router_test.py::TestBiddingScore::test_bidding_score_with_tester FAILED
+tests/router_test.py::TestBiddingScore::test_bidding_with_all_droppable FAILED
+tests/router_test.py::TestBiddingScore::test_bidding_with_droppable_and_none_droppable FAILED
+tests/stp_common_test.py::TestSTP::test_get_topic_without_param PASSED
+tests/stp_common_test.py::TestSTP::test_topic_with_empty_param PASSED
+tests/stp_common_test.py::TestSTP::test_topic_with_param PASSED
+tests/stp_common_test.py::TestSTP::test_topic_without_auth PASSED
+tests/stp_common_test.py::TestSTP::test_get_error_without_param PASSED
+tests/stp_common_test.py::TestSTP::test_error_with_empty_param PASSED
+tests/stp_common_test.py::TestSTP::test_error_with_param PASSED
+tests/stp_common_test.py::TestSTP::test_error_without_auth PASSED
+tests/stp_common_test.py::TestSTP::test_create_error_missing_name PASSED
+tests/stp_common_test.py::TestSTP::test_create_error_without_auth PASSED
+tests/stp_common_test.py::TestSTP::test_create_error_already_exist PASSED
+tests/stp_common_test.py::TestSTP::test_create_error_success PASSED
+tests/text_filter_test.py::TestTextFilter::test_text_filter PASSED
+tests/wao_ep_test.py::TestWAOExpertPortal::test_sign_up_with_email PASSED
+tests/wao_ep_test.py::TestWAOExpertPortal::test_sign_up_with_existed_email PASSED
+tests/wao_ep_test.py::TestWAOExpertPortal::test_update_base_info_with_existed_nick_name PASSED
+tests/wao_ep_test.py::TestWAOExpertPortal::test_update_base_info_with_valid_nick_name PASSED
+tests/wao_ep_test.py::TestWAOExpertPortal::test_verify_sms_code PASSED
+tests/wao_ep_test.py::TestWAOExpertPortal::test_change_password PASSED
+tests/wao_ep_test.py::TestWAOExpertPortal::test_performance FAILED
+tests/wao_ep_test.py::TestWAOExpertPortal::test_add_explainer_stat FAILED
+tests/models/config_test.py::TestConfigModel::test_allows_valid_config PASSED
+tests/models/config_test.py::TestConfigModel::test_disallows_invalid_config PASSED
+
+=================================== FAILURES ===================================
+_______________ TestAskerMessage.test_post_message_text_success ________________
+
+self = <tests.asker_explaination_message_test.TestAskerMessage instance at 0x10aab4ea8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10aaa7510>
+
+    def test_post_message_text_success(self, session):
+        token = self._setup(session)
+>       self._setup_explantion(session)
+
+tests/asker_explaination_message_test.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/asker_explaination_message_test.py:31: in _setup_explantion
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10aaa7390>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10aaf2410>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10aaa7e90> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+____________ TestAskerMessage.test_post_message_file_excel_success _____________
+
+self = <tests.asker_explaination_message_test.TestAskerMessage instance at 0x10ab76710>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab5f910>
+
+    def test_post_message_file_excel_success(self, session):
+        token = self._setup(session)
+>       self._setup_explantion(session)
+
+tests/asker_explaination_message_test.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/asker_explaination_message_test.py:31: in _setup_explantion
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10ab5f890>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10afb5790>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10ab5fb50> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_______________ TestAskerMessage.test_post_message_image_sucess ________________
+
+self = <tests.asker_explaination_message_test.TestAskerMessage instance at 0x10aae2758>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10aadae10>
+
+    def test_post_message_image_sucess(self, session):
+        token = self._setup(session)
+>       self._setup_explantion(session)
+
+tests/asker_explaination_message_test.py:106: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/asker_explaination_message_test.py:31: in _setup_explantion
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10ab5ff10>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10af9e950>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10abb55d0> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+___ TestAskerMessage.test_post_message_with_both_attach_and_message_success ____
+
+self = <tests.asker_explaination_message_test.TestAskerMessage instance at 0x10aacae60>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad5d210>
+
+    def test_post_message_with_both_attach_and_message_success(self, session):
+        token = self._setup(session)
+>       self._setup_explantion(session)
+
+tests/asker_explaination_message_test.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/asker_explaination_message_test.py:31: in _setup_explantion
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10ad5d050>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10ab55190>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10aa75550> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+___________________ TestAsker.test_add_info_grade_id_was_set ___________________
+
+self = <tests.asker_test.TestAsker instance at 0x10b2f2fc8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad5da90>
+
+    def test_add_info_grade_id_was_set(self, session):
+        token = self._setup(session)
+        self.asker.grade_id = Grade.OTHER
+        session.commit()
+    
+        data = {
+            'nickname': 'vietcm',
+>           'grade_id': Grade.COLLEGE,
+            'phone': '+84972848393'
+        }
+E       AttributeError: class Grade has no attribute 'COLLEGE'
+
+tests/asker_test.py:99: AttributeError
+_____ TestAsker.test_create_problem_spreadsheet_shared_url_missing_fields ______
+
+self = <tests.asker_test.TestAsker instance at 0x10aae2bd8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b218850>
+
+    def test_create_problem_spreadsheet_shared_url_missing_fields(self, session):
+        token = self._setup(session)
+        topic = SpreadsheetTopicModel(
+            name='dummy topic'
+        )
+        session.add(topic)
+        session.commit()
+    
+        data = {
+            'spreadsheet_software': SpreadsheetSoftwareSupport.GOOGLE_SPREADSHEETS,
+            'text': 'Dummy text',
+            'spreadsheet_topic_id': topic.id,
+            'spreadsheet_shared_url': 'https://docs.google.com/spreadsheets/d/1',
+            'spreadsheet_shared_id': 'dummy string',
+            'spreadsheet_shared_thumbnail_url': 'http://dummy.com'
+        }
+        res = post_data(token, '/askers/me/problems', json.dumps(data))
+        assert res.status_code == 400
+        data = json.loads(res.data)
+        assert data[KEY_ERROR_CODE] == ErrorCode.CLIENT_ERROR
+        assert 'spreadsheet' in data[KEY_ERROR_MESSAGE]
+    
+        data = {
+            'spreadsheet_software': SpreadsheetSoftwareSupport.GOOGLE_SPREADSHEETS,
+            'text': 'Dummy text',
+            'spreadsheet_topic_id': topic.id,
+            'spreadsheet_shared_url': 'https://docs.google.com/spreadsheets/d/1',
+            'spreadsheet_shared_id': 'dummy string',
+            'spreadsheet_shared_type': 'spreadsheet'
+        }
+        res = post_data(token, '/askers/me/problems', json.dumps(data))
+>       assert res.status_code == 400
+E       assert 200 == 400
+E        +  where 200 = <Response streamed [200 OK]>.status_code
+
+tests/asker_test.py:447: AssertionError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+___________ TestAsker.test_create_problem_file_upload_missing_fields ___________
+
+self = <tests.asker_test.TestAsker instance at 0x10af5c6c8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10abda8d0>
+
+    def test_create_problem_file_upload_missing_fields(self, session):
+        token = self._setup(session)
+        topic = SpreadsheetTopicModel(
+            name='dummy topic'
+        )
+        session.add(topic)
+        session.commit()
+    
+        data = {
+            'spreadsheet_software': SpreadsheetSoftwareSupport.GOOGLE_SPREADSHEETS,
+            'text': 'Dummy text',
+            'spreadsheet_topic_id': topic.id,
+            'file_id': 'dummy string',
+            'file_thumbnail_url': 'http://dummy.com'
+        }
+        res = post_data(token, '/askers/me/problems', json.dumps(data))
+        assert res.status_code == 400
+        data = json.loads(res.data)
+        assert data[KEY_ERROR_CODE] == ErrorCode.CLIENT_ERROR
+        assert 'file excel' in data[KEY_ERROR_MESSAGE]
+    
+        data = {
+            'spreadsheet_software': SpreadsheetSoftwareSupport.GOOGLE_SPREADSHEETS,
+            'text': 'Dummy text',
+            'spreadsheet_topic_id': topic.id,
+            'file_id': 'dummy string',
+            'file_type': 'spreadsheet'
+        }
+        res = post_data(token, '/askers/me/problems', json.dumps(data))
+>       assert res.status_code == 400
+E       assert 200 == 400
+E        +  where 200 = <Response streamed [200 OK]>.status_code
+
+tests/asker_test.py:511: AssertionError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+______________________ TestAsker.test_update_info_success ______________________
+
+self = <tests.asker_test.TestAsker instance at 0x10ad4c128>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad45fd0>
+
+    def test_update_info_success(self, session):
+        token = self._setup(session)
+        self.asker.grade_id = Grade.OTHER
+        self.asker.nickname = 'vietmc'
+        self.asker.phone = '+843232313213'
+        session.commit()
+    
+        data = {
+>           'grade_id': Grade.COLLEGE
+        }
+E       AttributeError: class Grade has no attribute 'COLLEGE'
+
+tests/asker_test.py:689: AttributeError
+_______________ TestExplainerProfileSettings.test_validate_input _______________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10b2c0248>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad2f410>
+
+    def test_validate_input(self, session):
+        self._setup(session)
+        # send empty first_name
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({'first_name':''}))
+>       assert rs.status_code == StatusCode.BAD_REQUEST
+E       assert 404 == 400
+E        +  where 404 = <Response streamed [404 NOT FOUND]>.status_code
+E        +  and   400 = StatusCode.BAD_REQUEST
+
+tests/explainer_profile_settings_test.py:53: AssertionError
+_______________ TestExplainerProfileSettings.test_set_first_name _______________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x1080c8f38>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad5cad0>
+
+    def test_set_first_name(self, session):
+        self._setup(session)
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({'first_name': 'new first name'}))
+        session.expire(self.explainer)
+>       assert self.explainer.first_name == 'new first name'
+E       assert 'mark_5060163' == 'new first name'
+E         - mark_5060163
+E         + new first name
+
+tests/explainer_profile_settings_test.py:104: AssertionError
+_______________ TestExplainerProfileSettings.test_set_last_name ________________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10ab4d128>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2a9290>
+
+    def test_set_last_name(self, session):
+        self._setup(session)
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({'last_name': 'new last name'}))
+        session.expire(self.explainer)
+>       assert self.explainer.last_name == 'new last name'
+E       assert 'sal_5060164' == 'new last name'
+E         - sal_5060164
+E         + new last name
+
+tests/explainer_profile_settings_test.py:110: AssertionError
+_________________ TestExplainerProfileSettings.test_set_skype __________________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10b2bf560>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2a9910>
+
+    def test_set_skype(self, session):
+        self._setup(session)
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({'skype': 'new skype'}))
+        session.expire(self.explainer)
+>       assert self.explainer.skype == 'new skype'
+E       assert None == 'new skype'
+E        +  where None = <main.models.explainer.ExplainerModel object at 0x10b2a9c10>.skype
+E        +    where <main.models.explainer.ExplainerModel object at 0x10b2a9c10> = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10b2bf560>.explainer
+
+tests/explainer_profile_settings_test.py:116: AssertionError
+______________ TestExplainerProfileSettings.test_set_google_plus _______________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10b2ec878>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad2ded0>
+
+    def test_set_google_plus(self, session):
+        self._setup(session)
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({'google_plus': 'new google_plus'}))
+        session.expire(self.explainer)
+>       assert self.explainer.google_plus == 'new google_plus'
+E       assert None == 'new google_plus'
+E        +  where None = <main.models.explainer.ExplainerModel object at 0x10b2a9710>.google_plus
+E        +    where <main.models.explainer.ExplainerModel object at 0x10b2a9710> = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10b2ec878>.explainer
+
+tests/explainer_profile_settings_test.py:122: AssertionError
+_________________ TestExplainerProfileSettings.test_set_avatar _________________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10ad34560>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad2f350>
+
+    def test_set_avatar(self, session):
+        self._setup(session)
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({'avatar': 'https://img.cloud.google.com/gotit/avatar/abc.jpg'}))
+        session.expire(self.explainer)
+>       assert self.explainer.avatar == 'https://img.cloud.google.com/gotit/avatar/abc.jpg'
+E       assert None == 'https://img.cloud.google.com/gotit/avatar/abc.jpg'
+E        +  where None = <main.models.explainer.ExplainerModel object at 0x10b2a9690>.avatar
+E        +    where <main.models.explainer.ExplainerModel object at 0x10b2a9690> = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10ad34560>.explainer
+
+tests/explainer_profile_settings_test.py:128: AssertionError
+______________ TestExplainerProfileSettings.test_set_adv_channel _______________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10b2d1290>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad5cf10>
+
+    def test_set_adv_channel(self, session):
+        self._setup(session)
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({'adv_channel': ExplainerAcquiredChannel.FACEBOOK}))
+        session.expire(self.explainer)
+>       assert self.explainer.adv_channel == ExplainerAcquiredChannel.FACEBOOK
+E       assert None == 3
+E        +  where None = <main.models.explainer.ExplainerModel object at 0x10b2a9250>.adv_channel
+E        +    where <main.models.explainer.ExplainerModel object at 0x10b2a9250> = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10b2d1290>.explainer
+E        +  and   3 = ExplainerAcquiredChannel.FACEBOOK
+
+tests/explainer_profile_settings_test.py:134: AssertionError
+________________ TestExplainerProfileSettings.test_set_payment _________________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10a1f8b90>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2ea7d0>
+
+    def test_set_payment(self, session):
+        self._setup(session)
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({'payment_id': 'paypal10000'
+                                                                    , 'payment_type': ExplainerPaymentType.PAYPAL}))
+        session.expire(self.explainer)
+>       assert self.explainer.payment_id == 'paypal10000'
+E       assert None == 'paypal10000'
+E        +  where None = <main.models.explainer.ExplainerModel object at 0x10b2ea490>.payment_id
+E        +    where <main.models.explainer.ExplainerModel object at 0x10b2ea490> = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10a1f8b90>.explainer
+
+tests/explainer_profile_settings_test.py:141: AssertionError
+____________ TestExplainerProfileSettings.test_set_multi_properties ____________
+
+self = <tests.explainer_profile_settings_test.TestExplainerProfileSettings instance at 0x10aa530e0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad2fd50>
+
+    def test_set_multi_properties(self, session):
+        self._setup(session)
+        rs = self._post_data(_PROFILE_SETTINGS_ENDPOINT, json.dumps({
+            "first_name": "new first name",
+            "last_name": "new last name",
+            "skype": "new skype",
+            "google_plus": "new google plus",
+            "avatar": "https://img.cloud.google.com/gotit/avatar/abc.jpg",
+            "adv_channel": ExplainerAcquiredChannel.FACEBOOK,
+            "payment_id": "paypal10000",
+            "payment_type": ExplainerPaymentType.PAYPAL,
+        }))
+        session.expire(self.explainer)
+>       assert self.explainer.first_name == 'new first name'
+E       assert 'mark_5060170' == 'new first name'
+E         - mark_5060170
+E         + new first name
+
+tests/explainer_profile_settings_test.py:157: AssertionError
+_____ TestExplanationSession.test_send_message_to_non_existed_explanation ______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10abc9ef0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab2f1d0>
+
+    def test_send_message_to_non_existed_explanation(self, session):
+        # post a chat message to a non-existed explanation
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:95: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 29L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+______ TestExplanationSession.test_send_chat_message_to_complete_problem _______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10af01dd0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab55390>
+
+    def test_send_chat_message_to_complete_problem(self, session):
+        # post a chat message to a completed problem
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 31L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______ TestExplanationSession.test_send_chat_message_to_ratting_problem _______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10a1bd680>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad56490>
+
+    def test_send_chat_message_to_ratting_problem(self, session):
+        # post a chat message to a completed problem
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:114: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 33L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______ TestExplanationSession.test_send_chat_message_to_failed_problem ________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10aaa8320>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad45cd0>
+
+    def test_send_chat_message_to_failed_problem(self, session):
+        # post a chat message to a completed problem
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:125: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 35L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______ TestExplanationSession.test_send_chat_message_to_flagged_problem _______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10b1ce878>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab3d810>
+
+    def test_send_chat_message_to_flagged_problem(self, session):
+        # post a chat message to a completed problem
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:136: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 37L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______ TestExplanationSession.test_send_chat_message_to_expired_session _______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10b2d18c0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10af950d0>
+
+    def test_send_chat_message_to_expired_session(self, session):
+        # send a chat message when session is expired
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:147: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 39L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______ TestExplanationSession.test_send_chat_message_in_concept_section _______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10b2ecdd0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2bd9d0>
+
+    def test_send_chat_message_in_concept_section(self, session):
+        # send a chat message before send concept
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 41L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+________ TestExplanationSession.test_send_chat_message_in_step_by_step _________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10b1b5248>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad2d3d0>
+
+    def test_send_chat_message_in_step_by_step(self, session):
+        # send a chat message after send concept
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:170: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 43L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______ TestExplanationSession.test_send_chat_message_in_final_solution ________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10a189290>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b21c750>
+
+    def test_send_chat_message_in_final_solution(self, session):
+        # send a chat message after end step-by-step
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:182: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 45L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_____ TestExplanationSession.test_send_chat_message_in_discussion_section ______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10af9fc20>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b21c5d0>
+
+    def test_send_chat_message_in_discussion_section(self, session):
+        # send chat message after send final solution
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:206: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 47L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+________ TestExplanationSession.test_send_concept_when_session_expired _________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10aa48fc8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2bd990>
+
+    def test_send_concept_when_session_expired(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:235: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 49L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___________ TestExplanationSession.test_send_concept_twice_exception ___________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10a21a560>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b320c10>
+
+    def test_send_concept_twice_exception(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 51L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+__________ TestExplanationSession.test_send_step_when_session_expired __________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10b2b9b90>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b320e10>
+
+    def test_send_step_when_session_expired(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:260: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 53L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+__________ TestExplanationSession.test_send_step_before_send_concept ___________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10b231f38>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b14b190>
+
+    def test_send_step_before_send_concept(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:276: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 55L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_________________ TestExplanationSession.test_send_multi_steps _________________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10adb79e0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab3d690>
+
+    def test_send_multi_steps(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:284: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 57L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+__________ TestExplanationSession.test_end_step_by_step_with_no_step ___________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10aa94bd8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab2fad0>
+
+    def test_end_step_by_step_with_no_step(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:304: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 59L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_________ TestExplanationSession.test_send_step_after_end_step_by_step _________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10b12abd8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2ea750>
+
+    def test_send_step_after_end_step_by_step(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:319: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 61L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___________ TestExplanationSession.test_send_end_step_by_step_twice ____________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10aed8170>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b1b9ed0>
+
+    def test_send_end_step_by_step_twice(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:341: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 63L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+______ TestExplanationSession.test_end_step_by_step_when_session_expired _______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10ab28560>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b310510>
+
+    def test_end_step_by_step_when_session_expired(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:360: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 65L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_____ TestExplanationSession.test_send_final_solution_before_send_concept ______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10ab4d5f0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2a9ad0>
+
+    def test_send_final_solution_before_send_concept(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:379: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 67L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______ TestExplanationSession.test_send_final_solution_before_send_step _______
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10ab4b560>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2bd690>
+
+    def test_send_final_solution_before_send_step(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:387: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 69L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___ TestExplanationSession.test_send_final_solution_before_end_step_by_step ____
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10b137950>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b1c0d90>
+
+    def test_send_final_solution_before_end_step_by_step(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:400: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 71L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_____ TestExplanationSession.test_send_final_solution_when_session_expired _____
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10add2bd8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad2f8d0>
+
+    def test_send_final_solution_when_session_expired(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:418: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 73L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+____________ TestExplanationSession.test_send_final_solution_twice _____________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10aea8098>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b3203d0>
+
+    def test_send_final_solution_twice(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:442: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 75L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___________ TestExplanationSession.test_text_filter_apply_to_message ___________
+
+self = <tests.explanation_session_test.TestExplanationSession instance at 0x10aa7f638>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab55110>
+
+    def test_text_filter_apply_to_message(self, session):
+>       self._setup_expalanation(session)
+
+tests/explanation_session_test.py:468: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/explanation_session_test.py:34: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 77L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+______________________ TestRanking.test_ranking_by_rating ______________________
+
+self = <tests.ranking_test.TestRanking instance at 0x10aaa86c8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab2ffd0>
+
+    def test_ranking_by_rating(self, session):
+>       self._setup(session)
+
+tests/ranking_test.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/ranking_test.py:15: in _setup
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 79L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______________________ TestRanking.test_ranking_by_bid ________________________
+
+self = <tests.ranking_test.TestRanking instance at 0x10b2a8e60>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad2fc10>
+
+    def test_ranking_by_bid(self, session):
+>       self._setup(session)
+
+tests/ranking_test.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/ranking_test.py:15: in _setup
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 81L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+______________________ TestRanking.test_ranking_by_answer ______________________
+
+self = <tests.ranking_test.TestRanking instance at 0x10adb8cf8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab0dbd0>
+
+    def test_ranking_by_answer(self, session):
+>       self._setup(session)
+
+tests/ranking_test.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/ranking_test.py:15: in _setup
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 83L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+______________________ TestRanking.test_ranking_by_audit _______________________
+
+self = <tests.ranking_test.TestRanking instance at 0x10ab4b2d8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b3103d0>
+
+    def test_ranking_by_audit(self, session):
+>       self._setup(session)
+
+tests/ranking_test.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/ranking_test.py:15: in _setup
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 85L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___________ TestRating.test_explainer_rating_without_reason_success ____________
+
+self = <tests.rating_test.TestRating instance at 0x10addffc8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2bd690>
+
+    def test_explainer_rating_without_reason_success(self, session):
+>       self._setup_expalanation(session)
+
+tests/rating_test.py:64: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/rating_test.py:32: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 87L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_____________ TestRating.test_explainer_rating_with_reason_success _____________
+
+self = <tests.rating_test.TestRating instance at 0x10ae363b0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b21c110>
+
+    def test_explainer_rating_with_reason_success(self, session):
+>       self._setup_expalanation(session)
+
+tests/rating_test.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/rating_test.py:32: in _setup_expalanation
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 89L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+____________ TestProblemCreated.test_successfully_routing_question _____________
+
+self = <tests.router_test.TestProblemCreated instance at 0x10ab4d200>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b1c0850>
+
+    def test_successfully_routing_question(self, session):
+>       self._setup(session)
+
+tests/router_test.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:24: in _setup
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 91L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+__________ TestProblemCreated.test_rerouting_problem_raises_exception __________
+
+self = <tests.router_test.TestProblemCreated instance at 0x10b2a8680>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2f54d0>
+
+    def test_rerouting_problem_raises_exception(self, session):
+>       self._setup(session)
+
+tests/router_test.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:24: in _setup
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 93L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+____________ TestProblemCreated.test_routing_to_multiple_explainers ____________
+
+self = <tests.router_test.TestProblemCreated instance at 0x10ae41f38>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b30f510>
+
+    def test_routing_to_multiple_explainers(self, session):
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:24: in _setup
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 95L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___________ TestProblemCreated.test_max_route_count_is_not_exceeded ____________
+
+self = <tests.router_test.TestProblemCreated instance at 0x10b122518>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b310190>
+
+    def test_max_route_count_is_not_exceeded(self, session):
+>       self._setup(session, num_explainers=10)
+
+tests/router_test.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:24: in _setup
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 97L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+______________ TestProblemCreated.test_routing_with_no_explainers ______________
+
+self = <tests.router_test.TestProblemCreated instance at 0x10b1c7ea8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad5c210>
+
+    def test_routing_with_no_explainers(self, session):
+>       self._setup(session, num_explainers=0)
+
+tests/router_test.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:29: in _setup
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10ab3d690>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b1b9290>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10ad5ccd0> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+__ TestProblemCreated.test_creating_problem_results_in_handle_problem_created __
+
+self = <tests.router_test.TestProblemCreated instance at 0x10b0963f8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b30fdd0>
+queue_deferred = <Mock id='4482724880'>
+
+    def test_creating_problem_results_in_handle_problem_created(self, session, queue_deferred):
+        problem = create_problem()
+        session.add(problem)
+>       session.commit()
+
+tests/router_test.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b30fc10>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10aaa75d0>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b2f5150> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_____ TestProblemCreated.test_routing_does_not_route_to_bidding_explainers _____
+
+self = <tests.router_test.TestProblemCreated instance at 0x10a124b00>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad2d610>
+
+    def test_routing_does_not_route_to_bidding_explainers(self, session):
+>       self._setup(session)
+
+tests/router_test.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:24: in _setup
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 99L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+__ TestProblemCreated.test_routing_does_not_route_to_disconnected_explainers ___
+
+self = <tests.router_test.TestProblemCreated instance at 0x10ab29680>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2bdbd0>
+
+    def test_routing_does_not_route_to_disconnected_explainers(self, session):
+>       self._setup(session)
+
+tests/router_test.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:24: in _setup
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 101L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+ TestExplainerAvailable.test_connected_explainer_is_not_routed_problem_without_delay 
+
+self = <tests.router_test.TestExplainerAvailable instance at 0x10ae305f0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b218450>
+queue_deferred = <Mock id='4481713552'>
+
+    def test_connected_explainer_is_not_routed_problem_without_delay(self, session, queue_deferred):
+>       self._setup(session)
+
+tests/router_test.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:110: in _setup
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b218790>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10ad2f290>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b2a9490> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+______ TestExplainerAvailable.test_connected_explainer_is_routed_problem _______
+
+self = <tests.router_test.TestExplainerAvailable instance at 0x10aa5a5f0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b30fa50>
+queue_deferred = <Mock id='4482726608'>
+
+    def test_connected_explainer_is_routed_problem(self, session, queue_deferred):
+>       self._setup(session)
+
+tests/router_test.py:130: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:110: in _setup
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b30fd10>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10af9e0d0>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b30f9d0> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_ TestExplainerAvailable.test_connected_explainer_is_not_routed_problem_twice __
+
+self = <tests.router_test.TestExplainerAvailable instance at 0x10b1bf7a0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10abdaf10>
+
+    def test_connected_explainer_is_not_routed_problem_twice(self, session):
+>       self._setup(session)
+
+tests/router_test.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:110: in _setup
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10ab2fad0>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b2bd510>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10ab55b10> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_ TestExplainerAvailable.test_connected_explainer_is_available_if_no_problems __
+
+self = <tests.router_test.TestExplainerAvailable instance at 0x10abc9cb0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10adb5850>
+
+    def test_connected_explainer_is_available_if_no_problems(self, session):
+        explainer = create_explainer()
+        session.add(explainer)
+        session.commit()
+        assert not explainer.explainer_state.available
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer.id)
+E           Failed: DID NOT RAISE
+
+tests/router_test.py:156: Failed
+ TestExplainerAvailable.test_explainer_not_routed_to_problem_with_wrong_subject 
+
+self = <tests.router_test.TestExplainerAvailable instance at 0x10b5b94d0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b1df4d0>
+
+    def test_explainer_not_routed_to_problem_with_wrong_subject(self, session):
+        problem = create_problem()
+        session.add(problem)
+>       session.commit()
+
+tests/router_test.py:163: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b1df050>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b1df0d0>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b1df150> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+__ TestExplainerAvailable.test_explainer_not_routed_problem_if_not_available ___
+
+self = <tests.router_test.TestExplainerAvailable instance at 0x10af40fc8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b320710>
+
+    def test_explainer_not_routed_problem_if_not_available(self, session):
+        problem = create_problem()
+        session.add(problem)
+>       session.commit()
+
+tests/router_test.py:175: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b3208d0>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b320a90>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b320490> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+____ TestExplainerAvailable.test_explainer_routed_to_high_priority_problem _____
+
+self = <tests.router_test.TestExplainerAvailable instance at 0x10b04cab8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b21c310>
+
+    def test_explainer_routed_to_high_priority_problem(self, session):
+        problem_high_priority = create_problem()
+        problem_high_priority.problem_state.priority = 1
+        session.add(problem_high_priority)
+>       session.commit()
+
+tests/router_test.py:187: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b21cd10>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b1dfd90>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b21c650> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_______________ TestBidAndSkipAndFlag.test_only_bid_becomes_king _______________
+
+self = <tests.router_test.TestBidAndSkipAndFlag instance at 0x10aaca1b8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2f5c10>
+
+    def test_only_bid_becomes_king(self, session):
+>       self._setup(session)
+
+tests/router_test.py:236: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:228: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 105L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_________ TestBidAndSkipAndFlag.test_cannot_bid_on_problem_not_routed __________
+
+self = <tests.router_test.TestBidAndSkipAndFlag instance at 0x10addf680>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b1b9ed0>
+
+    def test_cannot_bid_on_problem_not_routed(self, session):
+>       self._setup(session)
+
+tests/router_test.py:244: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:228: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 107L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_________ TestBidAndSkipAndFlag.test_bid_loses_if_better_bid_comes_in __________
+
+self = <tests.router_test.TestBidAndSkipAndFlag instance at 0x10aafca28>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2ea910>
+
+    def test_bid_loses_if_better_bid_comes_in(self, session):
+>       self._setup(session, num_explainers=2)
+
+tests/router_test.py:256: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:228: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 109L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_ TestBidAndSkipAndFlag.test_explainer_stays_in_bidding_state_when_others_bid __
+
+self = <tests.router_test.TestBidAndSkipAndFlag instance at 0x10b0dfef0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad45e90>
+
+    def test_explainer_stays_in_bidding_state_when_others_bid(self, session):
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:264: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:228: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 111L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______________________ TestBidAndSkipAndFlag.test_skip ________________________
+
+self = <tests.router_test.TestBidAndSkipAndFlag instance at 0x10ac9a560>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10af95fd0>
+
+    def test_skip(self, session):
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:228: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 113L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+__________ TestBidAndSkipAndFlag.test_skip_and_bid_reduce_num_bidding __________
+
+self = <tests.router_test.TestBidAndSkipAndFlag instance at 0x10b2a8ab8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2f5190>
+
+    def test_skip_and_bid_reduce_num_bidding(self, session):
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:280: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:228: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 115L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_______________________ TestBidAndSkipAndFlag.test_flag ________________________
+
+self = <tests.router_test.TestBidAndSkipAndFlag instance at 0x10aea8c20>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b236250>
+
+    def test_flag(self, session):
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:291: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:228: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 117L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___________________ TestBidAndSkipAndFlag.test_flag_and_bid ____________________
+
+self = <tests.router_test.TestBidAndSkipAndFlag instance at 0x10ae11cb0>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10acc2450>
+
+    def test_flag_and_bid(self, session):
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:302: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:228: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 119L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+______________ TestGrantOrTimeout.test_no_bids_results_in_failed _______________
+
+self = <tests.router_test.TestGrantOrTimeout instance at 0x10b12a878>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b1c03d0>
+
+    def test_no_bids_results_in_failed(self, session):
+        MAX_REROUTES = rre.RREConfig.MAX_REROUTES()
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:327: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:316: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 121L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:max_reroutes. Please set this value in the DB
+___________ TestGrantOrTimeout.test_having_bids_results_in_chatting ____________
+
+self = <tests.router_test.TestGrantOrTimeout instance at 0x10aa60320>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b30f950>
+
+    def test_having_bids_results_in_chatting(self, session):
+        MAX_REROUTES = rre.RREConfig.MAX_REROUTES()
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:336: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:316: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 123L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:max_reroutes. Please set this value in the DB
+___________ TestGrantOrTimeout.test_cannot_bid_on_completed_problem ____________
+
+self = <tests.router_test.TestGrantOrTimeout instance at 0x10acdd488>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b0dd9d0>
+
+    def test_cannot_bid_on_completed_problem(self, session):
+        MAX_REROUTES = rre.RREConfig.MAX_REROUTES()
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:347: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:316: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 125L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:max_reroutes. Please set this value in the DB
+_________ TestGrantOrTimeout.test_timed_out_bids_decrease_num_bidding __________
+
+self = <tests.router_test.TestGrantOrTimeout instance at 0x10acc35a8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ae86610>
+
+    def test_timed_out_bids_decrease_num_bidding(self, session):
+        MAX_REROUTES = rre.RREConfig.MAX_REROUTES()
+>       self._setup(session, num_explainers=3)
+
+tests/router_test.py:358: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:316: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 127L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:max_reroutes. Please set this value in the DB
+ TestGrantOrTimeout.test_max_routes_or_timeout_not_called_if_still_bidding_and_not_timeout 
+
+self = <tests.router_test.TestGrantOrTimeout instance at 0x10aea87e8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2ef790>
+queue_deferred = <Mock id='4482593872'>
+
+    def test_max_routes_or_timeout_not_called_if_still_bidding_and_not_timeout(self, session, queue_deferred):
+        from main.models.problem_state import TARGET_ROUTE_COUNT
+>       self._setup(session, num_explainers=TARGET_ROUTE_COUNT)
+
+tests/router_test.py:365: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:316: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 129L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+ TestGrantOrTimeout.test_max_routes_or_timeout_called_if_none_bidding_and_max_routes 
+
+self = <tests.router_test.TestGrantOrTimeout instance at 0x10adb72d8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2eadd0>
+queue_deferred = <Mock id='4477986576'>
+
+    def test_max_routes_or_timeout_called_if_none_bidding_and_max_routes(self, session, queue_deferred):
+        MAX_REROUTES = rre.RREConfig.MAX_REROUTES()
+        from main.models.problem_state import TARGET_ROUTE_COUNT
+>       self._setup(session, num_explainers=TARGET_ROUTE_COUNT)
+
+tests/router_test.py:371: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:316: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 131L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:max_reroutes. Please set this value in the DB
+__ TestGrantOrTimeout.test_max_routes_or_timeout_not_called_if_not_max_routes __
+
+self = <tests.router_test.TestGrantOrTimeout instance at 0x10ad34fc8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10adb5810>
+queue_deferred = <Mock id='4477113488'>
+
+    def test_max_routes_or_timeout_not_called_if_not_max_routes(self, session, queue_deferred):
+>       self._setup(session, num_explainers=2)
+
+tests/router_test.py:377: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:316: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 133L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+____________ TestProblemReroute.test_problem_is_rerouted_if_no_king ____________
+
+self = <tests.router_test.TestProblemReroute instance at 0x10b569368>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ab2f6d0>
+
+    def test_problem_is_rerouted_if_no_king(self, session):
+>       self._setup(session)
+
+tests/router_test.py:396: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:388: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 135L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+__________ TestProblemReroute.test_problem_is_not_rerouted_if_success __________
+
+self = <tests.router_test.TestProblemReroute instance at 0x10b44ccf8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2367d0>
+
+    def test_problem_is_not_rerouted_if_success(self, session):
+        # Create a problem
+        # Create an explainer
+>       self._setup(session, num_explainers=1)
+
+tests/router_test.py:404: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:388: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 137L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+____________ TestProblemReroute.test_problem_is_rerouted_if_no_bids ____________
+
+self = <tests.router_test.TestProblemReroute instance at 0x10b42da70>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2efa90>
+
+    def test_problem_is_rerouted_if_no_bids(self, session):
+        # TODO(gotit)
+        # Create a problem
+        # Don't create any explainers (num_explainers=0)
+>       self._setup(session, num_explainers=0)
+
+tests/router_test.py:416: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:392: in _setup
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b2ef650>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10ac2b3d0>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10acc2c10> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+___________________ TestProblemReroute.test_reroute_problem ____________________
+
+self = <tests.router_test.TestProblemReroute instance at 0x10b146c20>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad56690>
+queue_deferred = <Mock id='4476727248'>
+
+    def test_reroute_problem(self, session, queue_deferred):
+>       self._setup(session)
+
+tests/router_test.py:424: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:388: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 139L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+____ TestProblemReroute.test_rerouted_problem_routed_only_to_new_explainers ____
+
+self = <tests.router_test.TestProblemReroute instance at 0x10b44cb90>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2eac50>
+
+    def test_rerouted_problem_routed_only_to_new_explainers(self, session):
+>       self._setup(session, num_explainers=1)
+
+tests/router_test.py:433: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:388: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 141L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___________ TestProblemReroute.test_rerouted_problem_can_be_granted ____________
+
+self = <tests.router_test.TestProblemReroute instance at 0x10acdd368>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ae86fd0>
+
+    def test_rerouted_problem_can_be_granted(self, session):
+>       self._setup(session, num_explainers=1)
+
+tests/router_test.py:441: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:388: in _setup
+    explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 143L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+______________ TestChattingEnded.test_states_after_chatting_ended ______________
+
+self = <tests.router_test.TestChattingEnded instance at 0x10a189cf8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b30f110>
+
+    def test_states_after_chatting_ended(self, session):
+>       self._setup(session)
+
+tests/router_test.py:462: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:453: in _setup
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 145L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+_____ TestChattingEnded.test_explainer_can_be_routed_after_chatting_ended ______
+
+self = <tests.router_test.TestChattingEnded instance at 0x10b262a28>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2bd890>
+queue_deferred = <Mock id='4482389008'>
+
+    def test_explainer_can_be_routed_after_chatting_ended(self, session, queue_deferred):
+>       self._setup(session)
+
+tests/router_test.py:470: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:453: in _setup
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 147L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___________ TestProblemRating.test_rating_problem_completes_problem ____________
+
+self = <tests.router_test.TestProblemRating instance at 0x10b523290>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b320c50>
+
+    def test_rating_problem_completes_problem(self, session):
+>       self._setup(session)
+
+tests/router_test.py:495: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:484: in _setup
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 149L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+____ TestProblemRating.test_rating_problem_does_not_clobber_explainer_state ____
+
+self = <tests.router_test.TestProblemRating instance at 0x10af41830>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b236490>
+
+    def test_rating_problem_does_not_clobber_explainer_state(self, session):
+>       self._setup(session)
+
+tests/router_test.py:506: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:484: in _setup
+    self.explainer = create_available_explainer(session)
+tests/helpers.py:69: in create_available_explainer
+    set_explainer_available(explainer.id)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+explainer_id = 151L
+
+    def set_explainer_available(explainer_id):
+        with pytest.raises(RouterException):
+>           router.handle_explainer_available(explainer_id)
+E           Failed: DID NOT RAISE
+
+tests/helpers.py:62: Failed
+___ TestBucketing.test_explainer_not_routed_problem_if_subject_doesnt_match ____
+
+self = <tests.router_test.TestBucketing instance at 0x10acafc20>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ac2bc10>
+
+    def test_explainer_not_routed_problem_if_subject_doesnt_match(self, session):
+>       self._setup(session)
+
+tests/router_test.py:528: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:521: in _setup
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10ac2b810>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10ac2b210>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10ac2b750> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+______ TestBucketing.test_explainer_routed_problem_if_one_subject_matches ______
+
+self = <tests.router_test.TestBucketing instance at 0x10ae30f80>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b1dfb90>
+
+    def test_explainer_routed_problem_if_one_subject_matches(self, session):
+>       self._setup(session)
+
+tests/router_test.py:536: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:521: in _setup
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b1df0d0>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b2ef950>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b2efcd0> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_________________________ TestBucketing.test_bucketing _________________________
+
+self = <tests.router_test.TestBucketing instance at 0x10aa5aea8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10adb5a10>
+
+    def test_bucketing(self, session):
+>       self._setup(session)
+
+tests/router_test.py:542: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/router_test.py:521: in _setup
+    session.commit()
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10adb5d10>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10adb5f10>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10adb5f90> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_______________ TestBiddingScore.test_bidding_score_with_zero_wr _______________
+
+self = <tests.router_test.TestBiddingScore instance at 0x10aef35a8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b25f310>
+
+    def test_bidding_score_with_zero_wr(self, session):
+        problem = create_problem(weighted_rank=0, weighted_bid=1)
+        session.add(problem)
+>       session.commit()
+
+tests/router_test.py:631: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b25f250>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b25fa10>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b25f750> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_______________ TestBiddingScore.test_bidding_score_with_zero_wb _______________
+
+self = <tests.router_test.TestBiddingScore instance at 0x10b1786c8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ae86bd0>
+
+    def test_bidding_score_with_zero_wb(self, session):
+        problem = create_problem(weighted_bid=0, weighted_rank=1)
+        session.add(problem)
+>       session.commit()
+
+tests/router_test.py:647: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10ae86350>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b2bda50>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10ae86150> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_______________ TestBiddingScore.test_bidding_score_with_tester ________________
+
+self = <tests.router_test.TestBiddingScore instance at 0x10b109368>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b2ea090>
+
+    def test_bidding_score_with_tester(self, session):
+        problem = create_problem()
+        session.add(problem)
+>       session.commit()
+
+tests/router_test.py:663: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b236310>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b1b9fd0>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b2bd090> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_______________ TestBiddingScore.test_bidding_with_all_droppable _______________
+
+self = <tests.router_test.TestBiddingScore instance at 0x10b080ea8>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b0dd9d0>
+
+    def test_bidding_with_all_droppable(self, session):
+        config = ConfigModel(
+            module="rre",
+            key=rre.RREConfig.LOW_RATTING_THRESHOLD.key,
+            value="10"
+        )
+        session.add(config)
+        problem = create_problem()
+        session.add(problem)
+>       session.commit()
+
+tests/router_test.py:686: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b0dd710>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10adb58d0>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10b0dd7d0> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_______ TestBiddingScore.test_bidding_with_droppable_and_none_droppable ________
+
+self = <tests.router_test.TestBiddingScore instance at 0x10b4a1560>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b1c05d0>
+
+    def test_bidding_with_droppable_and_none_droppable(self, session):
+        config = ConfigModel(
+            module="rre",
+            key=rre.RREConfig.LOW_RATTING_THRESHOLD.key,
+            value="10"
+        )
+        session.add(config)
+        problem = create_problem()
+        session.add(problem)
+>       session.commit()
+
+tests/router_test.py:712: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+lib/sqlalchemy/orm/scoping.py:157: in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+lib/sqlalchemy/orm/session.py:801: in commit
+    self.transaction.commit()
+lib/sqlalchemy/orm/session.py:392: in commit
+    self._prepare_impl()
+lib/sqlalchemy/orm/session.py:372: in _prepare_impl
+    self.session.flush()
+lib/sqlalchemy/orm/session.py:2019: in flush
+    self._flush(objects)
+lib/sqlalchemy/orm/session.py:2137: in _flush
+    transaction.rollback(_capture_exception=True)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/session.py:2101: in _flush
+    flush_context.execute()
+lib/sqlalchemy/orm/unitofwork.py:373: in execute
+    rec.execute(self)
+lib/sqlalchemy/orm/unitofwork.py:532: in execute
+    uow
+lib/sqlalchemy/orm/persistence.py:149: in save_obj
+    base_mapper, states, uowtransaction
+lib/sqlalchemy/orm/persistence.py:280: in _organize_states_for_save
+    mapper.dispatch.before_insert(mapper, connection, state)
+lib/sqlalchemy/event/attr.py:218: in __call__
+    fn(*args, **kw)
+lib/sqlalchemy/orm/events.py:614: in wrap
+    fn(*arg, **kw)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+mapper = <Mapper at 0x107ebd790; ExplanationParticipantModel>
+connection = <sqlalchemy.engine.base.Connection object at 0x10b1c0bd0>
+target = <main.models.explanation_participant.ExplanationParticipantModel object at 0x10b3209d0>
+
+    @staticmethod
+    @sa.event.listens_for(saorm.mapper, 'before_insert')
+    @sa.event.listens_for(saorm.mapper, 'before_update')
+    def handle_before_exec(mapper, connection, target):
+        if not hasattr(target, '_sav_validate'):
+            return
+        sess = saorm.session.Session.object_session(target)
+        sess._sav_ent_exec_count -= 1
+    
+        target._sav_validate(target, 'before_exec')
+    
+        if sess._sav_ent_exec_count == 0:
+            ents_with_error = []
+            for ent in sess._sav_ents_to_validate:
+                if ent.validation_errors:
+                    ents_with_error.append(ent)
+            # print ents_with_error
+            if ents_with_error:
+>               raise ValidationError(ents_with_error)
+E               ValidationError: validation error(s): <main.models.problem.ProblemModel object at 0x10ac2b890> [spreadsheet_topic_id: "Please enter a value"]
+
+lib/savalidation/__init__.py:273: ValidationError
+----------------------------- Captured stderr call -----------------------------
+ERROR [root] Using default value for config rre:target_route_count. Please set this value in the DB
+_____________________ TestWAOExpertPortal.test_performance _____________________
+
+self = <tests.wao_ep_test.TestWAOExpertPortal instance at 0x10ab26f80>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10b236c90>
+
+    def test_performance(self, session):
+        explainer1 = create_explainer()
+        explainer1.email = 'killuaz82@gmail.com'
+        explainer1.password_salt = pw.generate_salt();
+        explainer1.password_hash = pw.generate_hash('123456', explainer1.password_salt)
+        explainer1.time_zone = 'America/Los_Angeles'
+        session.add(explainer1)
+        session.commit()
+        import datetime, time
+        date = datetime.date.today()
+        stat_date1 = time.mktime(date.timetuple())
+>       stat1 = create_explainer_daily_stat(explainer1.id, stat_date1, 'VLOOK')
+
+tests/wao_ep_test.py:165: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/helpers.py:213: in create_explainer_daily_stat
+    rating_5_star=0,
+<string>:4: in __init__
+    ???
+lib/sqlalchemy/orm/state.py:306: in _initialize_instance
+    manager.dispatch.init_failure(self, args, kwargs)
+lib/sqlalchemy/util/langhelpers.py:60: in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+lib/sqlalchemy/orm/state.py:303: in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+main/models/explainer_daily_stat.py:32: in __init__
+    super(ExplainerDailyStatModel, self).__init__(*args, **kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <main.models.explainer_daily_stat.ExplainerDailyStatModel object at 0x10adb5550>
+kwargs = {'category': 'VLOOK', 'explainer_id': 167L, 'rating_1_star': 1, 'rating_2_star': 0, ...}
+cls_ = <class 'main.models.explainer_daily_stat.ExplainerDailyStatModel'>
+k = 'category'
+
+    def _declarative_constructor(self, **kwargs):
+        """A simple constructor that allows initialization from kwargs.
+    
+        Sets attributes on the constructed instance using the names and
+        values in ``kwargs``.
+    
+        Only keys that are present as
+        attributes of the instance's class are allowed. These could be,
+        for example, any mapped columns or relationships.
+        """
+        cls_ = type(self)
+        for k in kwargs:
+            if not hasattr(cls_, k):
+                raise TypeError(
+                    "%r is an invalid keyword argument for %s" %
+>                   (k, cls_.__name__))
+E               TypeError: 'category' is an invalid keyword argument for ExplainerDailyStatModel
+
+lib/sqlalchemy/ext/declarative/base.py:648: TypeError
+_________________ TestWAOExpertPortal.test_add_explainer_stat __________________
+
+self = <tests.wao_ep_test.TestWAOExpertPortal instance at 0x10b249d40>
+session = <sqlalchemy.orm.scoping.scoped_session object at 0x10ad08ad0>
+
+    def test_add_explainer_stat(self, session):
+        id = 87
+        state = ProblemStateModel.query\
+>           .filter(ProblemStateModel.id==id)\
+            .one_or_none()
+E       AttributeError: type object 'ProblemStateModel' has no attribute 'id'
+
+tests/wao_ep_test.py:193: AttributeError
+==================== 98 failed, 69 passed in 14.44 seconds =====================
